@@ -21,13 +21,18 @@ Three hours
 - Send data across all processes : No source provided
 - Calculation of PI: Serial C and Fortran (pi_serial.c/f90)
 
+# Preparation
+
+In preparation for this lab, read the [instructions on logging in to PDC](https://www.pdc.kth.se/support/documents/login/login.html), 
+which will help you get going on Beskow.
+
 # Exercise 1: Run "Hello, World"
 
 Run the "Hello, World" program found in the lecture. Make sure you understand how each processors prints its rank as well as the total number of processors in the communicator MPI_COMM_WORLD.
 
 # Exercise 2: Parallelize the "Game of Life"
 
-Here is some background on the "Game of Life", in case you're new to the problem.
+[Here is some background on the "Game of Life"](Game_of_Life.md), in case you're new to the problem.
 
 For this exercise, add the initialization and finalization routines to the serial "Game of Life" code. This will effectly duplicate the exact same calculation on each processor. In order to show that the code is performing as expected, add statements to print overall size, and the rank of the local process. Don't forget to add the MPI header file.
 
