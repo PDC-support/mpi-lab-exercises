@@ -32,7 +32,7 @@ Run the "Hello, World" program found in the lecture. Make sure you understand ho
 
 # Exercise 2: Parallelize the "Game of Life"
 
-[Here is some background on the "Game of Life"](Game_of_Life.md), in case you're new to the problem.
+[Here is some background on the "Game of Life"](Game_of_life.md), in case you're new to the problem.
 
 For this exercise, add the initialization and finalization routines to the serial "Game of Life" code. This will effectly duplicate the exact same calculation on each processor. In order to show that the code is performing as expected, add statements to print overall size, and the rank of the local process. Don't forget to add the MPI header file.
 
@@ -72,7 +72,8 @@ In order to truly run the "Game of Life" program in parallel, we must set up our
 
 Hint: Although this can be done with different kinds of sends and receives, use blocking sends and receives for the current problem. We have chosen the configuration described above because in C arrays, rows are contiguous, and in Fortran columns are contiguous. This approach allows the specification of the initial array location and the number of words in the send and receive routines.
 
-One issue that you need to consider is that of internal domain boundaries. Figure 1 shows the "left-right" domain decomposition described above. Each cell needs information from all adjacent cells to determine its new state. With domain decomposition, some of the required cells no longer are available on the local processor. A common way to tackle this problem is through the use of ghost cells. In the current example, a column of ghost cells is added to the right side of the left domain, and a column is also added to the left side of the right domain (shown in Figure 2). After each time step, the ghost cells are filled by passing the appropriate data from the other processor. You may want to refer to the figure in the background on the "Game of Life" to see how to fill the other ghost cells.
+One issue that you need to consider is that of internal domain boundaries. Figure 1 shows the "left-right" domain decomposition described above. Each cell needs information from all adjacent cells to determine its new state. With domain decomposition, some of the required cells no longer are available on the local processor. A common way to tackle this problem is through the use of ghost cells. In the current example, a column of ghost cells is added to the right side of the left domain, and a column is also added to the left side of the right domain (shown in Figure 2). After each time step, the ghost cells are filled by passing the appropriate data from the other processor. You may want to refer to the figure in the 
+[background on the "Game of Life"](Game_of_life.md) to see how to fill the other ghost cells.
 
 ![Left-right Domain Decomposition](lr_decomp.jpg)
 ![Ghost cells](ghost.jpg)
