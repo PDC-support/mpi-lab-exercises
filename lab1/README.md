@@ -111,5 +111,12 @@ The solutions can be found in the [sol/ directory](sol/).
 
 # Acknowledgment
 
-The examples in this lab are provided for educational purposes by National Center for Supercomputing Applications, (in particular their Cyberinfrastructure Tutor), Lawrence Livermore National Laboratory and Argonne National Laboratory. Much of the LLNL MPI materials comes from the Cornell Theory Center. We would like to thank them for allowing us to develop the material for machines at PDC. You might find other useful educational materials at these sites.
+The examples in this lab are provided for educational purposes by 
+[National Center for Supercomputing Applications](http://www.ncsa.illinois.edu/), 
+(in particular their [Cyberinfrastructure Tutor](http://www.citutor.org/)), 
+[Lawrence Livermore National Laboratory](https://computing.llnl.gov/) and 
+[Argonne National Laboratory](http://www.mcs.anl.gov/). Much of the LLNL MPI materials comes from the 
+[Cornell Theory Center](http://www.cac.cornell.edu/). 
+We would like to thank them for allowing us to develop the material for machines at PDC. 
+You might find other useful educational materials at these sites.
 
