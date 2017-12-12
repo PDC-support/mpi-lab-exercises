@@ -2,23 +2,23 @@ In this lab, you'll get familiar with MPI's Collection Communication routines, u
 
 # Overview
 
-**Goals**
+### Goals
 
 Get familar with MPI Collective Communication routines and non-blocking calls
 
-**Duration**
+### Duration
 
 Three hours
 
 
 # Source Codes
 
-- Calculation of PI: Serial C and Fortran
+- Calculation of PI: Serial C and Fortran ([pi_serial.c](pi_serial.c) and [pi_serial.f90](pi_serial.90))
 - Send data across all processes : No source provided
-- Game of Life: Serial C and Fortran
-- Parallel Search: Serial C and Fortran
-- Input file used in the Parallel Search program: b.data
-- Output file from the Parallel Search program: reference.found.data
+- Game of Life: Serial C and Fortran ([game_of_life-serial.c](game_of_life-serial.c) and [game_of_life-serial.f90](game_of_life-serial.f90))
+- Parallel Search: Serial C and Fortran ([parallel_search-serial.c](parallel_search-serial.c) and [parallel_search-serial.f90](parallel_search-serial.f90))
+- Input file used in the Parallel Search program: [b.data](b.data)
+- Output file from the Parallel Search program: [reference.found.data](reference.found.data)
 
 # Preparation
 
