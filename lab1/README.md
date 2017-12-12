@@ -105,11 +105,11 @@ outfilename="found.data_" // rankchar
 open(unit=11,file=outfilename)
 ```
 
+# Solutions
+
+The solutions can be found in the [sol/ directory](sol/).
 
 # Acknowledgment
 
 The examples in this lab are provided for educational purposes by National Center for Supercomputing Applications, (in particular their Cyberinfrastructure Tutor), Lawrence Livermore National Laboratory and Argonne National Laboratory. Much of the LLNL MPI materials comes from the Cornell Theory Center. We would like to thank them for allowing us to develop the material for machines at PDC. You might find other useful educational materials at these sites.
 
-# Solutions
-
-The solutions can be found in the [sol/ directory](sol/).
