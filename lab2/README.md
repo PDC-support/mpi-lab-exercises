@@ -13,7 +13,7 @@ Three hours
 
 # Source Codes
 
-- Calculation of PI: Serial C and Fortran ([pi_serial.c](pi_serial.c) and [pi_serial.f90](pi_serial.90))
+- Calculation of PI: Serial C and Fortran ([pi_serial.c](pi_serial.c) and [pi_serial.f90](pi_serial.f90))
 - Send data across all processes : No source provided
 - Game of Life: Serial C and Fortran ([game_of_life-serial.c](game_of_life-serial.c) and [game_of_life-serial.f90](game_of_life-serial.f90))
 - Parallel Search: Serial C and Fortran ([parallel_search-serial.c](parallel_search-serial.c) and [parallel_search-serial.f90](parallel_search-serial.f90))
