@@ -52,6 +52,6 @@ MPID_Init(461).......:  PMI2 init failed: 1
 
 # MPI Exercises
 
-- MPI Lab 1: [Program Structure and Point-to-Point Communication in MPI](lab1/instructions_lab1.md)
-- MPI Lab 2: [Collective and Non-Blocking Communication](lab2/instructions_lab2.md)
-- MPI Lab 3: [Advanced Topics](lab3/instructions_lab3.md)
+- MPI Lab 1: [Program Structure and Point-to-Point Communication in MPI](lab1/README.md)
+- MPI Lab 2: [Collective and Non-Blocking Communication](lab2/README.md)
+- MPI Lab 3: [Advanced Topics](lab3/README.md)
