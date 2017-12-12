@@ -2,24 +2,25 @@ In this lab, you'll gain familiarity with MPI program structure, and point-to-po
 
 # Overview
 
-**Goals**
+### Goals
 
 Get familiar with MPI program structure, and point-to-point communication by writing a few first simple MPI programs.
 
-**Duration**
+### Duration
 
 Three hours
 
 
 # Source Codes
 
-- Hello, World: Serial C and Fortran (hello_world.c/f90)
-- Game of Life: Serial C and Fortran (game_of_life-serial.c/f90)
-- Parallel Search: Serial C and Fortran (parallel_search-serial.c/f90)
-- Input file used in the Parallel Search program: b.data 
-- Output file from the Parallel Search program: reference.found.data
+- Hello, World: Serial C and Fortran ([hello_mpi.c](hello_mpi.c) and [hello_mpi.f90](hello_mpi.f90)) 
+- Game of Life: Serial C and Fortran ([game_of_life-serial.c](game_of_life-serial.c) and [game_of_life-serial.f90](game_of_life-serial.f90)) 
+- Parallel Search: Serial C and Fortran ([parallel_search-serial.c](parallel_search-serial.c) 
+  and [parallel_search-serial.f90](parallel_search-serial.f90))
+- Input file used in the Parallel Search program: [b.data](b.data)
+- Output file from the Parallel Search program: [reference.found.data](reference.found.data)
 - Send data across all processes : No source provided
-- Calculation of PI: Serial C and Fortran (pi_serial.c/f90)
+- Calculation of PI: Serial C and Fortran ([pi_serial.c](pi_serial.c) and [pi_serial.f90](pi_serial.f90))
 
 # Preparation
 
