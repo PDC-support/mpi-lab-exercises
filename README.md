@@ -19,9 +19,9 @@ To access PDC's cluster you should use your laptop and the Eduroam or KTH Open w
 
 The Cray automatically loads several [modules](https://www.pdc.kth.se/support/documents/running/running_jobs/software.html#using-modules) at login.
 
-heimdal - [Kerberos commands](https://www.pdc.kth.se/support/documents/login/login.html#general-information-about-kerberos)
-openafs - [AFS commands](https://www.pdc.kth.se/support/documents/running/managing_files/afs.html)
-Slurm -  [queuing system commands](https://www.pdc.kth.se/support/documents/running/running_jobs/job_scheduling.html)
+- Heimdal - [Kerberos commands](https://www.pdc.kth.se/support/documents/login/login.html#general-information-about-kerberos)
+- OpenAFS - [AFS commands](https://www.pdc.kth.se/support/documents/running/managing_files/afs.html)
+- SLURM -  [queuing system commands](https://www.pdc.kth.se/support/documents/running/running_jobs/job_scheduling.html)
 
 
 # Running MPI programs on Beskow
@@ -52,6 +52,6 @@ MPID_Init(461).......:  PMI2 init failed: 1
 
 # MPI Exercises
 
-MPI Lab 1: [Program Structure and Point-to-Point Communication in MPI](lab1/instructions_lab1.md)
-MPI Lab 2: [Collective and Non-Blocking] Communication(lab1/instructions_lab1.md)
-MPI Lab 3: [Advanced Topics](lab1/instructions_lab1.md)
+- MPI Lab 1: [Program Structure and Point-to-Point Communication in MPI](lab1/instructions_lab1.md)
+- MPI Lab 2: [Collective and Non-Blocking] Communication(lab1/instructions_lab1.md)
+- MPI Lab 3: [Advanced Topics](lab1/instructions_lab1.md)
