@@ -112,4 +112,4 @@ The examples in this lab are provided for educational purposes by National Cente
 
 # Solutions
 
-The solutions can be found in the `sol/` directory.
+The solutions can be found in the [sol/ directory](sol/).
