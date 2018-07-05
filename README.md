@@ -20,8 +20,8 @@ To access PDC's cluster you should use your laptop and the Eduroam or KTH Open w
 The Cray automatically loads several [modules](https://www.pdc.kth.se/support/documents/running/running_jobs/software.html#using-modules) at login.
 
 - Heimdal - [Kerberos commands](https://www.pdc.kth.se/support/documents/login/login.html#general-information-about-kerberos)
-- OpenAFS - [AFS commands](https://www.pdc.kth.se/support/documents/running/managing_files/afs.html)
-- SLURM -  [queuing system commands](https://www.pdc.kth.se/support/documents/running/running_jobs/job_scheduling.html)
+- OpenAFS - [AFS commands](https://www.pdc.kth.se/support/documents/data_management/afs.html)
+- SLURM -  [batch jobs](https://www.pdc.kth.se/support/documents/run_jobs/queueing_jobs.html) and [interactive jobs](https://www.pdc.kth.se/support/documents/run_jobs/run_interactively.html)
 
 
 # Running MPI programs on Beskow
