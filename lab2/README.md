@@ -64,7 +64,7 @@ When you use the standard MPI scatter routine you will see that the global array
 
 # Solutions
 
-The solutions can be found in the [sol/ directory](sol/).
+The solutions will be made available at the end of the lab.
 
 # Acknowledgment
 

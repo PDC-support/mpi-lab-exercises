@@ -107,7 +107,7 @@ open(unit=11,file=outfilename)
 
 # Solutions
 
-The solutions can be found in the [sol/ directory](sol/).
+The solutions will be made available at the end of the lab.
 
 # Acknowledgment
 
