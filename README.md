@@ -17,7 +17,7 @@ To access PDC's cluster you should use your laptop and the Eduroam or KTH Open w
 
 # More about the environment on Beskow
 
-The Cray automatically loads several [modules](https://www.pdc.kth.se/support/documents/running/running_jobs/software.html#using-modules) at login.
+The Cray automatically loads several [modules](https://www.pdc.kth.se/support/documents/run_jobs/job_scheduling.html#accessing-software) at login.
 
 - Heimdal - [Kerberos commands](https://www.pdc.kth.se/support/documents/login/login.html#general-information-about-kerberos)
 - OpenAFS - [AFS commands](https://www.pdc.kth.se/support/documents/data_management/afs.html)
