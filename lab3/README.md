@@ -71,7 +71,7 @@ As you would expect the latency is much better on a single node than across node
 
 # Solutions
 
-The solutions can be found in the [sol/ directory](sol/).
+The solutions will be made available at the end of the lab.
 
 # Acknowledgment
 
