@@ -59,7 +59,7 @@ Hint: As the number of darts and rounds is hard coded then all workers already k
 
 In this exercise, you learn about the heart of MPI: point-to-point message-passing routines in both their blocking and non-blocking forms as well as the various modes of communication.
 
-Try to parallelize the "Parallel Search" problem. In the parallel search problem, the program should find all occurrences of a certain integer, which will be called the target. It should then write the target value, the indices and the number of occurences to an output file. In addition, the program should read both the target value and all the array elements from an input file.
+Your task is to parallelize the "Parallel Search" problem. In the parallel search problem, the program should find all occurrences of a certain integer, which will be called the target. It should then write the target value, the indices and the number of occurences to an output file. In addition, the program should read both the target value and all the array elements from an input file.
 
 Hint: One issue that comes up when parallelizing a serial code is handling I/O. As you can imagine, having multiple processes writing to the same file at the same time can produce useless results. A simple solution is to have each process write to an output file named with its rank. Output to these separate files removes the problem. Here is how to do that in C and Fortran:
 
