@@ -1,6 +1,6 @@
-**Instructions and hints on how to run for the MPI course**
+# Instructions and hints on how to run for the MPI course
 
-# Where to run
+## Where to run
 
 The exercises will be run on PDC's CRAY XC-40 system [Beskow](https://www.pdc.kth.se/hpc-services/computing-systems):
 
@@ -8,14 +8,14 @@ The exercises will be run on PDC's CRAY XC-40 system [Beskow](https://www.pdc.kt
 beskow.pdc.kth.se
 ```
 
-# How to login
+## How to login
 
 To access PDC's cluster you should use your laptop and the Eduroam or KTH Open wireless networks.
 
 [Instructions on how to connect from various operating systems](https://www.pdc.kth.se/support/documents/login/login.html).
 
 
-# More about the environment on Beskow
+## More about the environment on Beskow
 
 The Cray automatically loads several [modules](https://www.pdc.kth.se/support/documents/run_jobs/job_scheduling.html#accessing-software) at login.
 
@@ -24,7 +24,7 @@ The Cray automatically loads several [modules](https://www.pdc.kth.se/support/do
 - SLURM -  [batch jobs](https://www.pdc.kth.se/support/documents/run_jobs/queueing_jobs.html) and [interactive jobs](https://www.pdc.kth.se/support/documents/run_jobs/run_interactively.html)
 
 
-# Running MPI programs on Beskow
+## Running MPI programs on Beskow
 
 First it is necessary to book a node for interactive use:
 
@@ -50,7 +50,7 @@ MPID_Init(461).......:  PMI2 init failed: 1
 ```
 
 
-# MPI Exercises
+## MPI Exercises
 
 - MPI Lab 1: [Program Structure and Point-to-Point Communication in MPI](lab1/README.md)
 - MPI Lab 2: [Collective and Non-Blocking Communication](lab2/README.md)
