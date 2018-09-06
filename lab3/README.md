@@ -1,10 +1,10 @@
-In this lab you will get more familiar with more advanced MPI topics, including one sided communication and MPI-IO
-
 # Overview
+
+In this lab you will get more familiar with more advanced MPI topics, including one sided communication and MPI I/O.
 
 ### Goals
 
-Get experience in MPI one sided communication, MPI-IO and topologies in MPI
+Get experience in MPI one sided communication, MPI I/O and topologies in MPI
 
 ### Duration
 
@@ -16,7 +16,7 @@ Three hours
   [game_of_life-one_sided-prototype.f90](game_of_life-one_sided-prototype.f90))
 - MPI Topology. Simple 1d example Topology C and Fortran ([simple_1d_topology.c](simple_1d_topology.c) 
   and [simple_1d_topology.f90](simple_1d_topology.f90))
-- MPI-IO. Serial hello world in C and Fortran ([hello_mpi.c](hello_mpi.c) and [hello_mpi.f90](hello_mpi.f90))
+- MPI I/O. Serial hello world in C and Fortran ([hello_mpi.c](hello_mpi.c) and [hello_mpi.f90](hello_mpi.f90))
 - MPI Latency: C and Fortran ([mpi_latency.c](mpi_latency.c) and [mpi_latency.f90](mpi_latency.f90))
 - MPI Bandwidth : C and Fortran ([mpi_bandwidth.c](mpi_bandwidth.c) and [mpi_bandwidth.f90](mpi_bandwidth.f90))
 - MPI Bandwidth Non-Blocking: C and Fortran ([mpi_bandwidth-nonblock.c](mpi_bandwidth-nonblock.c) 
@@ -41,9 +41,9 @@ The code in Exercise 1 uses a simple and manually implemented "topology". Re-imp
 
 Note that the position in the new topology is not necessarily the same as the position in MPI_COMM_WORLD so make sure that the initial grid setup reflects that.
 
-# Exercise 3 - MPI IO
+# Exercise 3 - MPI I/O
 
-MPI-I/O is used so that results can be written to the same file in parallel. Take the serial hello world programs and modify them so that instead of writing the output to screen the output is written to a file using MPI-IO.
+MPI I/O is used so that results can be written to the same file in parallel. Take the serial hello world programs and modify them so that instead of writing the output to screen the output is written to a file using MPI I/O.
 
 The simplest solution is likely to be for you to create a character buffer, and then use the MPI_File_write_at function.
 
