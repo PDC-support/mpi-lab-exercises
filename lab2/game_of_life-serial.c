@@ -16,8 +16,8 @@ serial version
 
 #define NSTEPS 500    /* number of time steps */
 
-int main(int argc, char *argv[]) {
-
+int main(int argc, char *argv[])
+{
   int i, j, n, im, ip, jm, jp, ni, nj, nsum, isum;
   int **old, **new;  
   float x;
@@ -34,15 +34,15 @@ int main(int argc, char *argv[]) {
     new[i] = malloc(nj*sizeof(int));
   }
 
-/*  initialize elements of old to 0 or 1 */
+  /* initialize elements of old to 0 or 1 */
 
   for(i=1; i<=NI; i++){
     for(j=1; j<=NJ; j++){
       x = rand()/((float)RAND_MAX + 1);
       if(x<0.5){
-	old[i][j] = 0;
+        old[i][j] = 0;
       } else {
-	old[i][j] = 1;
+        old[i][j] = 1;
       }
     }
   }
@@ -72,28 +72,28 @@ int main(int argc, char *argv[]) {
 
     for(i=1; i<=NI; i++){
       for(j=1; j<=NJ; j++){
-	im = i-1;
-	ip = i+1;
-	jm = j-1;
-	jp = j+1;
+        im = i-1;
+        ip = i+1;
+        jm = j-1;
+        jp = j+1;
 
-	nsum =  old[im][jp] + old[i][jp] + old[ip][jp]
-	  + old[im][j ]              + old[ip][j ] 
-	  + old[im][jm] + old[i][jm] + old[ip][jm];
+        nsum =  old[im][jp] + old[i][jp] + old[ip][jp]
+              + old[im][j ]              + old[ip][j ] 
+              + old[im][jm] + old[i][jm] + old[ip][jm];
 
-	switch(nsum){
+        switch(nsum){
 
-	case 3:
-	  new[i][j] = 1;
-	  break;
+        case 3:
+          new[i][j] = 1;
+          break;
 
-	case 2:
-	  new[i][j] = old[i][j];
-	  break;
+        case 2:
+          new[i][j] = old[i][j];
+          break;
 
-	default:
-	  new[i][j] = 0;
-	}
+        default:
+          new[i][j] = 0;
+        }
       }
     }
 
@@ -101,7 +101,7 @@ int main(int argc, char *argv[]) {
 
     for(i=1; i<=NI; i++){
       for(j=1; j<=NJ; j++){
-	old[i][j] = new[i][j];
+        old[i][j] = new[i][j];
       }
     }
   }
