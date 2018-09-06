@@ -15,11 +15,11 @@
 
 #define NSTEPS 500
 
-int main(int argc, char *argv[]){
-
+int main(int argc, char *argv[])
+{
   int i, j, n, im, ip, jm, jp, nsum, isum, isum1, nprocs ,myid, ierr;
   int ig, jg, i1g, i2g, j1g, j2g, ninom, njnom, ninj, i1, i2, i2m,
-    j1, j2, j2m, ni, nj, isumloc,igrid;
+      j1, j2, j2m, ni, nj, isumloc,igrid;
   int niproc, njproc;
   int **old, **new, *old1d, *new1d;
 
@@ -109,7 +109,7 @@ int main(int argc, char *argv[]){
         /* local i and j indices, accounting for lower ghost cell */
         i = ig - i1g + 1;
         j = jg ;
-	
+
         if(x<0.5){
           old[i][j] = 0;
         }else{
@@ -152,19 +152,19 @@ int main(int argc, char *argv[]){
     }else{
 
       if(myid==0) {
-	above_rank=nprocs-1;
+        above_rank=nprocs-1;
       } else {
-	above_rank=myid-1;
+        above_rank=myid-1;
       } 
 
       if(myid==nprocs-1) {
-	below_rank=0;
+        below_rank=0;
       } else {
-	below_rank=myid+1;
+        below_rank=myid+1;
       }
 
       /* FIXME */
-	
+
       /* use one sided communication to move row from above and */
       /* below into ghost cells */  
 
@@ -181,7 +181,7 @@ int main(int argc, char *argv[]){
 
         for(i=i1; i<=i2; i++){
          old[i][0]  = old[i][j2m];
-	 old[i][j2] = old[i][1];
+         old[i][j2] = old[i][1];
         }
 
     }

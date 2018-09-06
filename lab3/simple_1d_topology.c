@@ -1,14 +1,14 @@
 #include "mpi.h"
 #include <stdio.h>
 #include <stdlib.h>
-int main(int argc, char *argv[]){
-
+int main(int argc, char *argv[])
+{
   int nprocs,myid,period,cart_id;
   int plus_one,minus_one,cart_position;
 
-  MPI_Comm cart_comm ;
+  MPI_Comm cart_comm;
 
- /* initialize MPI */
+  /* initialize MPI */
 
   MPI_Init(&argc,&argv);
   MPI_Comm_size(MPI_COMM_WORLD,&nprocs);
@@ -26,5 +26,7 @@ int main(int argc, char *argv[]){
   printf("myid = %d cart_id=%d cart_position=%d plus_one=%d minus_one=%d\n",myid,cart_id,cart_position,plus_one,minus_one);
   
   MPI_Finalize();
+
+  return 0;
 }
  
