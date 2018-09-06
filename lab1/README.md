@@ -99,9 +99,11 @@ One issue that you need to consider is that of internal domain boundaries. Figur
 [background on the "Game of Life"](Game_of_life.md) to see how to fill the other ghost cells.
 
 Figure 1. Left-right domain decomposition.
+
 <img src="lr_decomp.jpg" alt="Figure 1" width="400px"/>
 
 Figure 2. Ghost cells.
+
 <img src="ghost.jpg" alt="Figure 2" width="400px"/>
 
 
