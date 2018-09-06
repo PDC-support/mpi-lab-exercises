@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[]) {
+int main (int argc, char *argv[])
+{
   const int N=300;
   int i,target;
   int b[N];
@@ -29,6 +30,5 @@ int main (int argc, char *argv[]) {
   }
   fclose(outfile);
  
- return 0;
+  return 0;
 }
-
