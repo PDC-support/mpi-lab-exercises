@@ -98,11 +98,11 @@ Hint: Although this can be done with different kinds of sends and receives, use 
 One issue that you need to consider is that of internal domain boundaries. Figure 1 shows the "left-right" domain decomposition described above. Each cell needs information from all adjacent cells to determine its new state. With domain decomposition, some of the required cells no longer are available on the local processor. A common way to tackle this problem is through the use of ghost cells. In the current example, a column of ghost cells is added to the right side of the left domain, and a column is also added to the left side of the right domain (shown in Figure 2). After each time step, the ghost cells are filled by passing the appropriate data from the other processor. You may want to refer to the figure in the 
 [background on the "Game of Life"](Game_of_life.md) to see how to fill the other ghost cells.
 
-<img src="lr_decomp.jpg" alt="Figure 1" width="400px"/>
 Figure 1. Left-right domain decomposition.
+<img src="lr_decomp.jpg" alt="Figure 1" width="400px"/>
 
-<img src="ghost.jpg" alt="Figure 2" width="400px"/>
 Figure 2. Ghost cells.
+<img src="ghost.jpg" alt="Figure 2" width="400px"/>
 
 
 **Your Challenge**
