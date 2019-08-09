@@ -56,13 +56,15 @@ Use `mpi_wtime` to compute latency and bandwidth with the bandwidth and latency 
 For this exercise, it is nice to compare running on the same node e.g.
 
 ```
-aprun -n 2 ./mpi_latency.x
+salloc -N 1 --ntasks-per-node=2 -A <project> -t 00:05:00
+srun -n 2 ./mpi_latency.x
 ```
 
 with running on separate nodes
 
 ```
-aprun -N 1 -n 2 ./mpi_latency.x
+salloc -N 2 --ntasks-per-node=1 -A <project> -t 00:05:00
+srun -n 2 ./mpi_latency.x
 ```
 
 Similarly for the bandwidth.

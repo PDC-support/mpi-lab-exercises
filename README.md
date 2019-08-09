@@ -32,15 +32,15 @@ First it is necessary to book a node for interactive use:
 salloc -A <allocation-name> -N 1 -t 1:0:0
 ```
 
-Then the aprun command is used to launch an MPI application:
+Then the srun command is used to launch an MPI application:
 
 ```
-aprun -n 32 ./example.x
+srun -n 32 ./example.x
 ```
 
 In this example we will start 32 MPI tasks (there are 32 cores per node on the Beskow nodes).
 
-If you do not use aprun and try to start your program on the login node then you will get an error similar to
+If you do not use srun and try to start your program on the login node then you will get an error similar to
 
 ```
 Fatal error in MPI_Init: Other MPI error, error stack:
