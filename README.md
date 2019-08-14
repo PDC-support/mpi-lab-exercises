@@ -22,6 +22,7 @@ The Cray automatically loads several [modules](https://www.pdc.kth.se/support/do
 - Heimdal - [Kerberos commands](https://www.pdc.kth.se/support/documents/login/login.html#general-information-about-kerberos)
 - OpenAFS - [AFS commands](https://www.pdc.kth.se/support/documents/data_management/afs.html)
 - SLURM -  [batch jobs](https://www.pdc.kth.se/support/documents/run_jobs/queueing_jobs.html) and [interactive jobs](https://www.pdc.kth.se/support/documents/run_jobs/run_interactively.html)
+- Software development - [Programming environments and compilers](https://www.pdc.kth.se/support/documents/software_development/development.html)
 
 
 # Running MPI programs on Beskow
