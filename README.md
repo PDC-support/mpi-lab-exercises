@@ -33,6 +33,9 @@ First it is necessary to book a node for interactive use:
 salloc -A <allocation-name> -N 1 -t 1:0:0
 ```
 
+You might also need to specify a reservation by adding the flag 
+`--reservation=<name-of-reservation>`.
+
 Then the srun command is used to launch an MPI application:
 
 ```
