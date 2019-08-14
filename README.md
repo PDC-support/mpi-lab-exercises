@@ -22,7 +22,35 @@ The Cray automatically loads several [modules](https://www.pdc.kth.se/support/do
 - Heimdal - [Kerberos commands](https://www.pdc.kth.se/support/documents/login/login.html#general-information-about-kerberos)
 - OpenAFS - [AFS commands](https://www.pdc.kth.se/support/documents/data_management/afs.html)
 - SLURM -  [batch jobs](https://www.pdc.kth.se/support/documents/run_jobs/queueing_jobs.html) and [interactive jobs](https://www.pdc.kth.se/support/documents/run_jobs/run_interactively.html)
+- Programming environment - [Compilers for software development](https://www.pdc.kth.se/support/documents/software_development/development.html)
 
+# Compiling MPI programs on Beskow
+
+By default the cray compiler is loaded into your environment. In order to use another compiler you have to swap compiler modules:
+
+```
+module swap PrgEnv-cray PrgEnv-gnu
+```
+or
+```
+module swap PrgEnv-cray PrgEnv-intel
+```
+
+On Beskow one should always use the *compiler wrappers* `cc`, `CC` or 
+`ftn` (for C, C++ and Fortran codes, respectively), 
+which will automatically link to MPI libraries and linear 
+algebra libraries like BLAS, LAPACK, etc.
+
+Examples:
+
+```
+# Fortran
+ftn [flags] source.f90
+# C
+cc [flags] source.c
+# C++
+CC [flags] source.cpp
+```
 
 # Running MPI programs on Beskow
 
@@ -31,6 +59,9 @@ First it is necessary to book a node for interactive use:
 ```
 salloc -A <allocation-name> -N 1 -t 1:0:0
 ```
+
+You might also need to specify a reservation by adding the flag 
+`--reservation=<name-of-reservation>`.
 
 Then the srun command is used to launch an MPI application:
 
