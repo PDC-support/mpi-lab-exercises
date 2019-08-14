@@ -52,6 +52,19 @@ cc [flags] source.c
 CC [flags] source.cpp
 ```
 
+Note: if you are using the Intel Programming Environment, and 
+if you are compiling C code, you might see error messages containing:
+
+```
+error: identifier "_Float128" is undefined
+```
+
+A workaround is to add a compiler flag:
+
+```
+cc -D_Float128=__float128 source.c
+```
+
 # Running MPI programs on Beskow
 
 First it is necessary to book a node for interactive use:
