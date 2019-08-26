@@ -13,6 +13,7 @@ Three hours
 # Source Codes
 
 - MPI I/O. Serial hello world in C and Fortran ([hello_mpi.c](hello_mpi.c) and [hello_mpi.f90](hello_mpi.f90))
+- MPI Derived types and I/O. Serial STL file reader in C and Fortran ([mpi_derived_types.c](mpi_derived_types.c) and [mpi_derived_types.f90](mpi_derived_types.f90)
 - MPI Latency: C and Fortran ([mpi_latency.c](mpi_latency.c) and [mpi_latency.f90](mpi_latency.f90))
 - MPI Bandwidth : C and Fortran ([mpi_bandwidth.c](mpi_bandwidth.c) and [mpi_bandwidth.f90](mpi_bandwidth.f90))
 - MPI Bandwidth Non-Blocking: C and Fortran ([mpi_bandwidth-nonblock.c](mpi_bandwidth-nonblock.c) 
@@ -29,7 +30,19 @@ MPI I/O is used so that results can be written to the same file in parallel. Tak
 
 The simplest solution is likely to be for you to create a character buffer, and then use the MPI_File_write_at function.
 
-# Exercises 2 - Bandwidth and latency between nodes
+# Exercise 2 - MPI I/O and dervied types
+
+Take the serial stl reader and modify it such that the stl file is read and written in parallel using collective MPI I/O.
+
+The simplest solution is likely to create a derived type for each triangle, and then use the MPI_File_write_at_all function. A correct solution will have the same MD5 hash for both stl models (input and output)
+
+```
+md5sum out.stl data/sphere.stl
+822aba6dc20cc0421f92ad50df95464c  out.stl
+822aba6dc20cc0421f92ad50df95464c  data/sphere.stl
+```
+
+# Exercises 3 - Bandwidth and latency between nodes
 
 Use `mpi_wtime` to compute latency and bandwidth with the bandwidth and latency codes above
 
