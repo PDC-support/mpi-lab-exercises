@@ -30,7 +30,7 @@ MPI I/O is used so that results can be written to the same file in parallel. Tak
 
 The simplest solution is likely to be for you to create a character buffer, and then use the MPI_File_write_at function.
 
-# Exercise 2 - MPI I/O and dervied types
+# Exercise 2 - MPI I/O and derived types
 
 Take the serial stl reader and modify it such that the stl file is read (and written) in parallel using collective MPI I/O. Use derived types such that the file can be read/written with a maximum of 3 I/O operations per read and write.
 
