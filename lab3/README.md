@@ -32,9 +32,9 @@ The simplest solution is likely to be for you to create a character buffer, and 
 
 # Exercise 2 - MPI I/O and dervied types
 
-Take the serial stl reader and modify it such that the stl file is read and written in parallel using collective MPI I/O.
+Take the serial stl reader and modify it such that the stl file is read (and written) in parallel using collective MPI I/O. Use derived types such that the file can be read/written with a maximum of 3 I/O operations per read and write.
 
-The simplest solution is likely to create a derived type for each triangle, and then use the MPI_File_write_at_all function. A correct solution will have the same MD5 hash for both stl models (input and output)
+The simplest solution is likely to create a derived type for each triangle, and then use the MPI_File_XXXX_at_all function. A correct solution will have the same MD5 hash for both stl models (input and output), unless the order of the triangles has been changed.
 
 ```
 md5sum out.stl data/sphere.stl
