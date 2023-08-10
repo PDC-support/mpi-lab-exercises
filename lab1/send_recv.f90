@@ -7,9 +7,9 @@ include "mpif.h"
 integer :: rank, value, comm_size, ierr
 integer :: istatus(MPI_STATUS_SIZE)
 
-call MPI_Init(ierr)
-call MPI_Comm_rank(MPI_COMM_WORLD, rank, ierr)
-call MPI_Comm_size(MPI_COMM_WORLD, comm_size, ierr)
+!Add call to mpi init
+!Add call to get rank
+!Add call to get size of communicator
 
 value = 0
 !Replace the commented lines with MPI calls
