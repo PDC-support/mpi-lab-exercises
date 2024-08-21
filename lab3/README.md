@@ -14,6 +14,7 @@ Three hours
 
 - MPI I/O. Serial hello world in C and Fortran ([hello_mpi.c](hello_mpi.c) and [hello_mpi.f90](hello_mpi.f90))
 - MPI Derived types and I/O. Serial STL file reader in C and Fortran ([mpi_derived_types.c](mpi_derived_types.c) and [mpi_derived_types.f90](mpi_derived_types.f90)
+- MPI Derived types using mpi_type_indexed ([ddt.3.indexed](ddt.3.indexed))
 - MPI Latency: C and Fortran ([mpi_latency.c](mpi_latency.c) and [mpi_latency.f90](mpi_latency.f90))
 - MPI Bandwidth : C and Fortran ([mpi_bandwidth.c](mpi_bandwidth.c) and [mpi_bandwidth.f90](mpi_bandwidth.f90))
 - MPI Bandwidth Non-Blocking: C and Fortran ([mpi_bandwidth-nonblock.c](mpi_bandwidth-nonblock.c) 
